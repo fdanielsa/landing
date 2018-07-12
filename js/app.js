@@ -39,6 +39,21 @@ $(document).bind("load", function(){
   			
   	});
  var punto = new Waypoint({
+  element: $('#Quienes'),
+  handler: function(direction) {
+  	if(direction == "down"){
+  	 $(".icon-circle-up").addClass("active");
+  	} else{
+  		$(".icon-circle-up").removeClass("active");
+  	}
+  },
+  offset: 100
+})
+
+$(document).bind("load", function(){
+  			
+  	});
+ var punto = new Waypoint({
   element: $('#Contacto'),
   handler: function(direction) {
   	if(direction == "down"){
@@ -47,5 +62,20 @@ $(document).bind("load", function(){
   		$(".icon-circle-up").removeClass("active");
   	}
   },
-  offset: "50px"
+  offset: 100
+})
+
+$(document).bind("load", function(){
+  			
+  	});
+ var punto = new Waypoint({
+  element: $('#Localizacion'),
+  handler: function(direction) {
+  	if(direction == "down"){
+  	 $(".icon-circle-up").addClass("active");
+  	} else{
+  		$(".icon-circle-up").removeClass("active");
+  	}
+  },
+  offset: 100
 })

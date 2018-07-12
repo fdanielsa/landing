@@ -185,7 +185,6 @@ textarea{
 	text-decoration: none;
 }
 
-.active{
-	background: #2E86C1;
-	color: #000000;
+.active:before {
+	color: #2E86C1;
 }	
