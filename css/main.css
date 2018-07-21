@@ -188,3 +188,7 @@ textarea{
 .active:before {
 	color: #2E86C1;
 }	
+
+.active{
+	color: #FDFEFE;
+}

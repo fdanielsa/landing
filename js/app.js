@@ -41,13 +41,15 @@ $(document).bind("load", function(){
  var punto = new Waypoint({
   element: $('#Quienes'),
   handler: function(direction) {
-  	if(direction == "down"){
+  	if(direction + "up"){
   	 $(".icon-circle-up").addClass("active");
   	} else{
   		$(".icon-circle-up").removeClass("active");
   	}
+
+    console.log("#Quienes, direction: " + direction); /* Escribe en consola cuando se activa la función */
   },
-  offset: 100
+  offset: 150
 })
 
 $(document).bind("load", function(){
@@ -56,13 +58,15 @@ $(document).bind("load", function(){
  var punto = new Waypoint({
   element: $('#Contacto'),
   handler: function(direction) {
-  	if(direction == "down"){
+  	if(direction + "down"){
   	 $(".icon-circle-up").addClass("active");
   	} else{
   		$(".icon-circle-up").removeClass("active");
   	}
+
+    console.log("#Contacto, direction: " + direction); /* Escribe en consola cuando se activa la función */
   },
-  offset: 100
+  offset: 150
 })
 
 $(document).bind("load", function(){
@@ -76,6 +80,22 @@ $(document).bind("load", function(){
   	} else{
   		$(".icon-circle-up").removeClass("active");
   	}
+
+    console.log("#Localizacion, direction: " + direction); /* Escribe en consola cuando se activa la función */
   },
-  offset: 100
+  offset: 150
+})
+
+ var punto = new Waypoint({
+  element: $('#Servicios'),
+  handler: function(direction) {
+  	if(direction == "down"){
+  	 $(".icon-circle-up").addClass("active");
+  	} else{
+  		$(".icon-circle-up").removeClass("active");
+  	}
+
+    console.log("#Servicios, direction: " + direction); /* Escribe en consola cuando se activa la función */
+  },
+  offset: 150
 })
